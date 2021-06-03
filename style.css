@@ -1,0 +1,164 @@
+* {
+  border:  0px;
+  padding: 0px;
+  margin:  0px;
+
+  color: white;
+}
+
+html {
+  background-color: #121212;
+  font-family: consolas, monospace;
+  scroll-behavior: smooth;
+  font-size: 1.25rem;
+}
+
+/* ------ NAVIGATION BAR ------ */
+
+nav {
+  padding-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+nav a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+
+nav li {
+  padding: 14px 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  cursor: pointer;
+}
+
+nav a:hover, nav li:hover {
+  background-color: #111;
+  color: #03dac6;
+}
+
+/* ------ HOME PAGE ------ */
+
+.index-summary {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.index-summary img {
+  width: 300px;
+  max-height: auto;
+  min-width: 300px;
+  padding-top: 3vh;
+  justify-content: center;
+}
+
+.home-page-divider {
+  background-color: grey;
+  margin: 60px;
+  height: 2px;
+}
+
+.index-tile {
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+.index-tile li {
+  display:inline-block;
+  background-color: #121212;
+  border: 2px solid grey;
+  padding: 20px;
+  width:25vw;
+  min-height: 300px;
+  max-height: 300px;
+  max-width:100%;
+}
+
+.index-tile li:hover {
+  border: 2px solid #eac60b;;
+  background-color: #1d1d1d;
+  cursor: pointer;
+}
+
+.index-tile li img {
+  width: 100px;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.index-tile li h2 {
+  overflow:visible;
+}
+
+.index-tile li p {
+  min-width: 100px;
+  max-width: 100px;
+}
+
+@media only screen and (orientation: portrait) {
+  .index-tile {
+    display: block;
+    min-width: 1000px;
+  }
+}
+
+/* ------ PROJECT SUMMARIES ------ */
+
+.projects-main {
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.projects-main aside {
+  color: grey;
+}
+
+.projects-main img {
+  min-width: 48vw;
+  max-width: 48vw;
+}
+
+.project_right {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
+.project_left {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.project_left img {
+  padding-right: 15px;
+}
+
+.project_right img {
+  padding-left: 15px;
+}
+
+.projects-main audio {
+  color: #eac60b;
+  background-color: #121212;
+  padding: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.projects-main hr {
+  background-color: grey;
+  margin: 15px;
+  height: 4px;
+}
